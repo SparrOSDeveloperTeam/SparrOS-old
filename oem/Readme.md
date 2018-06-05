@@ -1,4 +1,4 @@
-### List of drivers
+### List of Drivers
 
 * ALSA (already installed on distro)
 * nVidia Graphics Cards
