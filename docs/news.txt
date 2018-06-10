@@ -4,3 +4,4 @@
 - June 6 2018: Add new sections on the downloads, start uploading SparrOS Desktop (x64) Beta 5 Image, and create md5sums for images.
 - June 7 2018: Create a 40GB partition on hard disk, start creation of SparrDrem server.
 - June 8 2018: Create terminal isos of SparrOS for x86 and x64 pcs, calculate md5sums of new files, update downloads page.
+- June 9 2018: Create a download mirror for SparrOS Terminal Edition, started working on creating apache2 server for SparrDrem server.
