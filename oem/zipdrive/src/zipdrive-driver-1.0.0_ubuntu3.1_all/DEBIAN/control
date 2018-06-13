@@ -1,0 +1,16 @@
+Package: zipdrive-driver
+Version: 1.0
+Maintainer: SparrOSDeveloperTeam
+Architecture: all
+Description: Zip(R) Drive Driver
+ This package will install the
+ Zip(R) Drive 250MB Driver.
+ 
+ Usage:
+ 
+ sudo zipdrive -m mounts the disk
+ 
+ sudo zipdrive -u umounts the
+ disk
+ 
+ sudo zipdrive -e ejects the disk
