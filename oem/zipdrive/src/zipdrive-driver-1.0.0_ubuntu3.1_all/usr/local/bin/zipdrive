@@ -1,0 +1,42 @@
+#!/bin/sh
+# Jean-Marc Rosengard - http://w2.syronex.com/jmr/
+# 250Mb parallel ZIP drive utility script
+
+
+#
+# you may have to change the device name below
+#
+
+device=sda4
+
+###############################################
+
+opt=$1
+id | grep "uid=0(" >/dev/null && root=1 || root=0
+if [[ $root = 1 ]];
+  then if [[ $opt = "-m" ]];
+  then
+    echo '-> loading kernel modules...'
+    /sbin/modprobe imm
+    echo '-> mounting ZIP drive on /mnt/zip...'
+    mount -o user,rw,nosuid,sync,mode=0777,umask=0 /dev/$device /mnt/zip
+  elif [[ $opt = "-u" ]];
+  then
+    echo '-> unmounting ZIP drive from /mnt/zip ...'
+    pwd | grep "/mnt/zip" >/dev/null  && cd
+    umount /dev/$device
+  elif [[ $opt = "-e" ]];
+  then
+    echo '-> unmounting ZIP drive from /mnt/zip ...'
+    pwd | grep "/mnt/zip" >/dev/null  && cd
+    umount /dev/$device
+    echo '-> ejecting disk ...'
+    eject /dev/$device
+  else
+    echo 'Usage: -m mount'
+    echo '       -u unmount'
+    echo '       -e eject' 
+  fi 
+else
+  echo Your need to be root !!
+fi
