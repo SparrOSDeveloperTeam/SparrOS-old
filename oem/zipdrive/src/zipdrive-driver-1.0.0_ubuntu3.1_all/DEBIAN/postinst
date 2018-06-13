@@ -1,0 +1,9 @@
+#!/bin/sh
+
+mkdir /mnt/zip
+chmod 777 /mnt/zip
+chmod 777 /usr/local/sbin/zipdrive
+echo "The Zip(R) Drive driver is installed."
+echo "Type 'sudo zipdrive -m' to mount the disk."
+echo "Type 'sudo zipdrive -u' to umount the disk."
+echo "Type 'sudo zipdrive -e' to eject the disk."
