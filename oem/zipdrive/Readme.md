@@ -1,13 +1,21 @@
 ## Setting up zipdrive driver
 
-To setup the zipdrive driver, download `zipdrive-install.sh` and `zipdrive` to the same directory. Then launch the bash script in root.
+To setup the zipdrive driver, download `zipdrive-driver-1.0.0_ubuntu3.1_all.deb` from <a href="#">here</a>, and run
+
+`sudo dpkg --install zipdrive-driver-1.0.0_ubuntu3.1_all.deb`
+
+The package will install.
 
 ## Removing the driver
 
-To remove the driver, download `zipdrive-uninstall.sh` will remove all components for the installer.
+To remove the driver, run the command
+
+`sudo dpkg --remove zipdrive-driver`
+
+and rm the `/mnt/zip` folder.
 
 ## zipdrive commands
 
-* `zipdrive -m` mounts the diskette.
-* `zipdrive -u` umounts the diskette.
-* `zipdrive -e` ejects the diskette from the physical drive.
+* `sudo zipdrive -m` mounts the diskette.
+* `sudo zipdrive -u` umounts the diskette.
+* `sudo zipdrive -e` ejects the diskette from the physical drive.
