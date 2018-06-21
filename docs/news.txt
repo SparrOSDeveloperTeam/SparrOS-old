@@ -6,3 +6,5 @@
 - June 8 2018: Create terminal isos of SparrOS for x86 and x64 pcs, calculate md5sums of new files, update downloads page.
 - June 9 2018: Create a download mirror for SparrOS Terminal Edition, started working on creating apache2 server for SparrDrem server.
 - June 15 2018: Create sparrdrem repository on Launchpad. Link to site: https://launchpad.net/~sparrdrem
+- June 17 2018: Create a test repository on Launchpad to test Raspberry Pi systems.
+- June 20 2018: Add spoilers to downloads page.
