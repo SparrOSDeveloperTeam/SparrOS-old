@@ -1,4 +1,4 @@
 # SparrOS
 The official page for the Desktop release
 
-<a href="https://sparrosdeveloperteam.github.io/SparrOS">Official Site</a>
+<a href="https://sparrosdeveloperteam.github.io/sparros">Official Site</a>
